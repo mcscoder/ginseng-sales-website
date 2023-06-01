@@ -1,0 +1,228 @@
+:root {
+  --sidebar-width: 300px;
+}
+
+// Tablet ----------------------------------------------------
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  width: var(--sidebar-width);
+  z-index: 999;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.7);
+  display: none;
+
+  .sidebar-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+
+    .menu {
+      display: flex;
+      position: relative;
+
+      .close-btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 24px;
+        padding: 7px;
+        background-color: transparent;
+        display: none;
+        align-items: center;
+      }
+
+      .btn {
+        flex: 1;
+        color: rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.4;
+        padding: 15px 0;
+        border-bottom: 3px solid transparent;
+        transition: all 0.35s;
+      }
+
+      .active-btn {
+        color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(216, 216, 216, 0.5);
+        border-bottom: 3px solid rgb(192, 31, 65);
+      }
+    }
+
+    // Product section start
+    .product-section {
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      overflow-y: overlay;
+      padding-top: 20px;
+
+      .sidebar-search-container {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+
+        .sidebar-search {
+          position: relative;
+          width: 100%;
+
+          .sidebar-search-input {
+            width: 100%;
+            padding: 7px 45px 7px 15px;
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 100px;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.6;
+          }
+
+          .sidebar-search-btn {
+            position: absolute;
+            top: 2px;
+            right: 7px;
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            font-size: 22px;
+            padding: 7px;
+          }
+        }
+      }
+
+      .sidebar-nav {
+        display: flex;
+        flex-direction: column;
+
+        .sidebar-link-item {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          padding: 15px 0 15px 20px;
+          background-color: transparent;
+          transition-duration: 0.3s;
+          border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+          img {
+            width: 50px;
+            margin-right: 7px;
+          }
+
+          span {
+            color: rgba(96, 96, 96, 0.9);
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 25px;
+            transition: all 0.3s;
+          }
+
+          &:hover {
+            background-color: rgba(192, 192, 192, 0.4);
+          }
+
+          &:hover span {
+            color: rgba(32, 32, 32, 1);
+          }
+        }
+      }
+
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+    }
+    // Product section end
+
+    .information-section {
+      padding-top: 20px;
+
+      .sidebar-information {
+        display: flex;
+        flex-direction: column;
+
+        .sidebar-link-item {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          padding: 20px 0 20px 20px;
+          background-color: transparent;
+          transition-duration: 0.3s;
+          border-top: 1px solid rgba(0, 0, 0, 0.05);
+          color: rgba(0, 0, 0, 0.6);
+          text-transform: uppercase;
+          font-size: 13px;
+          font-weight: 600;
+          line-height: 1.4;
+
+          &:first-child {
+            border: none;
+          }
+
+          &:hover {
+            background-color: rgba(192, 192, 192, 0.4);
+            color: rgba(32, 32, 32, 1);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Animation ---------------------------------------------------
+
+@mixin slideLeftToRight($time: 0.5s) {
+  @keyframes slide-left-to-right-animation {
+    0% {
+      left: calc(-20px - var(--sidebar-width));
+    }
+
+    100% {
+      left: 0;
+    }
+  }
+
+  animation: slide-left-to-right-animation $time ease-in-out forwards;
+}
+
+.slide-left-to-right {
+  @include slideLeftToRight(0.3s);
+}
+
+@mixin slideRightToLeft($time: 0.5s) {
+  @keyframes slide-right-to-left-animation {
+    0% {
+      left: 0;
+    }
+
+    100% {
+      left: calc(-20px - var(--sidebar-width));
+    }
+  }
+
+  animation: slide-right-to-left-animation $time ease-in-out forwards;
+}
+
+.slide-right-to-left {
+  @include slideRightToLeft(0.3s);
+}
+
+// Mobile device -----------------------------------------------
+@media screen and (max-width: 480px) {
+  :root {
+    --sidebar-width: 100%;
+  }
+
+  .close-btn {
+    display: flex !important;
+  }
+}
