@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { navLinkItems, informationLinkItems } from "../config/sidebarItems";
-import menuItems from "../config/menuItems";
+import { navLinkItems, informationLinkItems } from "../../config/sidebarItems";
+import menuItems from "../../config/menuItems";
 import classNames from "classnames/bind";
 import style from "./NavSidebar.module.scss";
-import layouts from "../config/layouts";
+import layouts from "../../config/layouts";
 
 const cx = classNames.bind(style);
 const id = layouts.nav_sidebar;

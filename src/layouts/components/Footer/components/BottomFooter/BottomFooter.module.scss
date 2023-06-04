@@ -1,0 +1,18 @@
+.bottom-footer-container {
+    background-color: #9B2A34;
+
+    .bottom-footer-content {
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+
+        span {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.85);
+
+            strong {
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,186 @@
+:root {
+  --popup-width: 880px;
+  --popup-height: 480px;
+
+  --label-small-font-size: 5px;
+  --label-font-size: 13px;
+}
+
+@mixin fadeIn($time: 0.5s) {
+  @keyframes fade-in {
+    0% {
+      transform: translateY(-40px);
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  animation: fade-in $time ease-out forwards;
+}
+
+.popup-container {
+  position: fixed;
+  left: calc(50% - var(--popup-width) / 2);
+  top: calc(50% - var(--popup-height) / 2);
+  width: var(--popup-width);
+  height: var(--popup-height);
+  z-index: 999;
+
+  .popup-content {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    padding-top: 70px;
+    @include fadeIn(0.3s);
+
+    .separator {
+      width: 1px;
+      height: 90%;
+      margin-top: 2%;
+      background-color: rgba(0, 0, 0, 0.12);
+    }
+
+    .form-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 30px;
+
+      .form-title {
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 5px;
+      }
+
+      .input-container {
+        position: relative;
+        margin-bottom: 20px;
+        background-color: rgb(237, 237, 237);
+        border: 1px solid rgba(255, 255, 255, 1);
+        border-radius: 5px;
+
+        input {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          background-color: transparent;
+          padding: 27px 9px 7px 9px;
+          color: rgba(0, 0, 0, 0.8);
+          font-size: 16px;
+          font-weight: 600;
+          z-index: 9999;
+
+          &:focus ~ .top-label,
+          &:valid ~ .top-label {
+            font-size: var(--label-font-size);
+            opacity: 1;
+          }
+
+          &:focus ~ .place-holder,
+          &:valid ~ .place-holder {
+            font-size: var(--label-small-font-size);
+            opacity: 0;
+          }
+        }
+
+        label {
+          position: absolute;
+          text-transform: uppercase;
+          font-weight: 700;
+          z-index: 999;
+          transition-duration: 0.25s;
+          transition-delay: 0.1s;
+        }
+
+        .top-label {
+          top: 6px;
+          left: 10px;
+          opacity: 0;
+          font-size: var(--label-small-font-size);
+        }
+
+        .place-holder {
+          top: 18px;
+          left: 20px;
+          font-size: var(--label-font-size);
+        }
+      }
+
+      .save-password {
+        // width: 100%;
+        margin-top: 10px;
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+
+        input {
+          margin-right: 15px;
+          width: 16px;
+          height: 16px;
+          accent-color: red;
+        }
+
+        span {
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
+
+      .submit-btn {
+        margin-top: 20px;
+        padding-left: 5px;
+
+        button {
+          background-color: rgba(172, 0, 0, 0.8);
+          text-transform: uppercase;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.4;
+          padding: 8px 15px;
+          border-radius: 99px;
+          transition: all 0.3s;
+
+          &:hover {
+            background-color: rgba(128, 0, 0, 0.8);
+          }
+        }
+      }
+
+      .forgot-password-link {
+        margin-top: 20px;
+        padding-left: 10px;
+
+        a {
+          transition: all 0.3s;
+          &:hover {
+            color: red;
+          }
+        }
+      }
+
+      .description {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          margin-bottom: 15px;
+          font-weight: 400;
+        }
+
+        .eng {
+          font-size: 16px;
+        }
+
+        .vi {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

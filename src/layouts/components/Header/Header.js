@@ -2,10 +2,13 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import classNames from "classnames/bind";
 import style from "./Header.module.scss";
-import NavSidebar from "./NavSidebar/NavSidebar";
-import MobileSearch from "./MobileSearch/MobileSearch";
-import CartSidebar from "./CartSidebar/CartSidebar";
-import layouts from "./config/layouts";
+import { layouts, headerToggleLinkItems, headerLinkItems } from "./config";
+import {
+  NavSidebar,
+  MobileSearch,
+  CartSidebar,
+  LoginFormPopup,
+} from "./components";
 
 const cx = classNames.bind(style);
 
@@ -31,7 +34,7 @@ function Header() {
   }
 
   return (
-    <>
+    <header>
       <div
         className={cx(
           "popup-bg",
@@ -62,6 +65,7 @@ function Header() {
         layout={displayedLayout}
         closeNavSidebar={() => handleDisplayedLayout(0)}
       />
+      <LoginFormPopup layout={displayedLayout} />
 
       <header className={cx("mobile-header")}>
         <div className={cx("mobile-header-content")}>
@@ -119,11 +123,19 @@ function Header() {
               </button>
             </form>
 
-            <button className={cx("login-btn")}>đăng nhập</button>
+            <button
+              className={cx("login-btn")}
+              onClick={() => handleDisplayedLayout(layouts.popup_login)}
+            >
+              đăng nhập
+            </button>
 
             <div className={cx("separator")}></div>
 
-            <button className={cx("cart-shopping-btn")}>
+            <button
+              className={cx("cart-shopping-btn")}
+              onClick={() => handleDisplayedLayout(layouts.cart_sidebar)}
+            >
               <i className="fa-solid fa-bag-shopping"></i>
               <span>giỏ hàng</span>
             </button>
@@ -142,43 +154,35 @@ function Header() {
 
                 <div className={cx("toggle-container")}>
                   <div className={cx("toggle-link-container")}>
-                    <NavLink className={cx("link-item")}>
-                      Sâm Ngọc Linh củ tươi
-                    </NavLink>
-                    <NavLink className={cx("link-item")}>
-                      Rượu củ tươi Sâm Ngọc Linh ngâm bình
-                    </NavLink>
-                    <NavLink className={cx("link-item")}>Rượu quốc tửu</NavLink>
-                    <NavLink className={cx("link-item")}>Rượu sâm</NavLink>
-                    <NavLink className={cx("link-item")}>
-                      Dịch chiết sâm
-                    </NavLink>
-                    <NavLink className={cx("link-item")}>Sâm mật ong</NavLink>
-                    <NavLink className={cx("link-item")}>Trà sâm</NavLink>
-                    <NavLink className={cx("link-item")}>Sâm yến</NavLink>
+                    {headerToggleLinkItems.map((item, index) => {
+                      return (
+                        <NavLink
+                          key={index}
+                          to={item.path}
+                          className={cx("link-item")}
+                        >
+                          {item.label}
+                        </NavLink>
+                      );
+                    })}
                   </div>
                 </div>
               </div>
             </div>
-            <div className={cx("link-item-container")}>
-              <NavLink className={cx("link-item")}>Combo quà tặng</NavLink>
-            </div>
-            <div className={cx("link-item-container")}>
-              <NavLink className={cx("link-item")}>Thực phẩm chức năng</NavLink>
-            </div>
-            <div className={cx("link-item-container")}>
-              <NavLink className={cx("link-item")}>Nước tăng lực</NavLink>
-            </div>
-            <div className={cx("link-item-container")}>
-              <NavLink className={cx("link-item")}>Nước uống collagen</NavLink>
-            </div>
-            <div className={cx("link-item-container")}>
-              <NavLink className={cx("link-item")}>Sữa dê</NavLink>
-            </div>
+
+            {headerLinkItems.map((item, index) => {
+              return (
+                <div key={index} className={cx("link-item-container")}>
+                  <NavLink to={item.path} className={cx("link-item")}>
+                    {item.label}
+                  </NavLink>
+                </div>
+              );
+            })}
           </div>
         </div>
       </header>
-    </>
+    </header>
   );
 }
 
