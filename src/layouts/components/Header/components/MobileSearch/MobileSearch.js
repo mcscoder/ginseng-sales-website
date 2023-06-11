@@ -1,11 +1,12 @@
 import classNames from "classnames/bind";
 import style from "./MobileSearch.module.scss";
-import layouts from "../config/layouts";
+import { layouts } from "../../config";
 
 const cx = classNames.bind(style);
 const id = layouts.mobile_search
 
 function MobileSearch({ layout }) {
+  console.log("Mobile-Search re-render");
   return (
     <div
       className={cx("mobile-search")}

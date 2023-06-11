@@ -1,6 +1,6 @@
 import classNames from "classnames/bind";
 import style from "./CartSidebar.module.scss";
-import layouts from "../config/layouts";
+import { layouts } from "../../config";
 import { useEffect, useState } from "react";
 
 const cx = classNames.bind(style);
