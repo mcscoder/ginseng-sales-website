@@ -1,3 +1,5 @@
+import routes from "config/routes";
+
 export const navLinkItems = [
   {
     path: "/",
@@ -10,52 +12,52 @@ export const navLinkItems = [
     productName: "rượu củ tươi",
   },
   {
-    path: "/",
+    path: routes.categoryLink.samMatOng,
     imgSrc: "/assets/images/samMatOng.jpg",
     productName: "sâm mật ong",
   },
   {
-    path: "/",
+    path: routes.categoryLink.dichChietSam,
     imgSrc: "/assets/images/dichChietSam.jpg",
     productName: "dịch chiết sâm",
   },
   {
-    path: "/",
+    path: routes.categoryLink.traSam,
     imgSrc: "/assets/images/traSam.jpg",
     productName: "trà sâm",
   },
   {
-    path: "/",
+    path: routes.categoryLink.samYen,
     imgSrc: "/assets/images/samYen.jpg",
     productName: "sâm yến",
   },
   {
-    path: "/",
+    path: routes.categoryLink.ruouSam,
     imgSrc: "/assets/images/ruouSam.jpg",
     productName: "rượu sâm",
   },
   {
-    path: "/",
+    path: routes.categoryLink.comboGift,
     imgSrc: "/assets/images/comboQuaTang.jpg",
     productName: "combo quà tặng",
   },
   {
-    path: "/",
+    path: routes.categoryLink.tpcn,
     imgSrc: "/assets/images/thucPhamChucNang.jpg",
     productName: "thực phẩm chức năng",
   },
   {
-    path: "/",
+    path: routes.categoryLink.nuocTangLuc,
     imgSrc: "/assets/images/nuocTangLuc.jpg",
     productName: "nước tăng lực",
   },
   {
-    path: "/",
+    path: routes.categoryLink.collagenDrink,
     imgSrc: "/assets/images/nuocUongCollagen.jpg",
     productName: "nước uống collagen",
   },
   {
-    path: "/",
+    path: routes.categoryLink.suaDe,
     imgSrc: "/assets/images/suaDe.jpg",
     productName: "sữa dê",
   },

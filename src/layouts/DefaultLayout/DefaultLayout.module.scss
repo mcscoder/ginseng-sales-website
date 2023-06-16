@@ -1,4 +1,11 @@
-.main {
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .main {
     width: 100%;
-    overflow: hidden;
+    flex: 1;
+    background-color: #fef6eb;
+  }
 }
