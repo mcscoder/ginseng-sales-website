@@ -1,11 +1,11 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 
-    .main {
-        width: 100%;
-        flex: 1;
-    }
+  .main {
+    width: 100%;
+    flex: 1;
+    background-color: #fef6eb;
+  }
 }
-

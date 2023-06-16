@@ -1,3 +1,5 @@
+import routes from "config/routes";
+
 export const headerToggleLinkItems = [
   {
     label: "Sâm Ngọc Linh củ tươi",
@@ -9,50 +11,49 @@ export const headerToggleLinkItems = [
   },
   {
     label: "Rượu quốc tửu",
-    path: "/",
+    path: routes.categoryLink.ruouQuocTuu,
   },
   {
     label: "Rượu sâm",
-    path: "/",
+    path: routes.categoryLink.ruouSam,
   },
   {
     label: "Dịch chiết sâm",
-    path: "/",
+    path: routes.categoryLink.dichChietSam,
   },
   {
     label: "Sâm mật ong",
-    path: "/",
+    path: routes.categoryLink.samMatOng,
   },
   {
     label: "Trà sâm",
-    path: "/",
+    path: routes.categoryLink.traSam,
   },
   {
     label: "Sâm yến",
-    path: "/",
+    path: routes.categoryLink.samYen,
   },
 ];
 
 export const headerLinkItems = [
   {
     label: "Combo quà tặng",
-    path: "/",
+    path: routes.categoryLink.giftCombo,
   },
   {
     label: "Thực phẩm chức năng",
-    path: "/",
+    path: routes.categoryLink.tpcn,
   },
   {
     label: "Nước tăng lực",
-    path: "/",
+    path: routes.categoryLink.nuocTangLuc,
   },
   {
     label: "Nước uống collagen",
-    path: "/",
+    path: routes.categoryLink.collagenDrink,
   },
   {
     label: "Sữa dê",
-    path: "/",
+    path: routes.categoryLink.suaDe,
   },
 ];
-// export default headerItems;

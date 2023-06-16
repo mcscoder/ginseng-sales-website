@@ -19,3 +19,13 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .product-container {
+    .title-container {
+      .title-text {
+        font-size: 16px;
+      }
+    }
+  }
+}

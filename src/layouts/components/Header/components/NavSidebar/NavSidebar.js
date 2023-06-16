@@ -86,7 +86,12 @@ function NavSidebar({ layout, closeNavSidebar = () => {} }) {
           <div className={cx("sidebar-nav")}>
             {navLinkItems.map((item, index) => {
               return (
-                <NavLink key={index} className={cx("sidebar-link-item")}>
+                <NavLink
+                  key={index}
+                  to={item.path}
+                  className={cx("sidebar-link-item")}
+                  onClick={closeNavSidebar}
+                >
                   <img src={item.imgSrc} />
                   <span>{item.productName}</span>
                 </NavLink>
@@ -102,7 +107,11 @@ function NavSidebar({ layout, closeNavSidebar = () => {} }) {
           <div className={cx("sidebar-information")}>
             {informationLinkItems.map((item, index) => {
               return (
-                <NavLink key={index} className={cx("sidebar-link-item")}>
+                <NavLink
+                  key={index}
+                  className={cx("sidebar-link-item")}
+                  onClick={closeNavSidebar}
+                >
                   {item.label}
                 </NavLink>
               );
