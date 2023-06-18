@@ -7,7 +7,6 @@ const cx = classNames.bind(style);
 const id = layouts.cart_sidebar;
 
 function CartSidebar({ layout, closeNavSidebar = () => {} }) {
-  console.log("Cart-Sidebar re-render");
   const [initialDisplay, setInitialDisplay] = useState(false);
   // false: none, true otherwise
   useEffect(() => {

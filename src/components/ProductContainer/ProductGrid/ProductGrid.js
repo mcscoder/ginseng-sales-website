@@ -40,6 +40,8 @@ function ProductGrid({ productList = [] }) {
     return <>{stars}</>;
   }
 
+  console.log();
+
   return (
     <div className={cx("product-section")}>
       {productList.map((item, index) => {
@@ -47,15 +49,18 @@ function ProductGrid({ productList = [] }) {
           <div key={index} className={cx("flex-col")}>
             <div className={cx("product-item")}>
               <div className={cx("product-image")}>
-                <NavLink>
-                  <img src={item.imgPath} />
+                <NavLink to={item.productLinkAddress}>
+                  <img src={item.imgPaths[0]} />
                 </NavLink>
               </div>
               <div className={cx("product-description")}>
                 <div className={cx("first-description")}>
                   <div className={cx("text-container")}>
                     <span className={cx("category")}>{item.category}</span>
-                    <NavLink className={cx("product-name")}>
+                    <NavLink
+                      to={item.productLinkAddress}
+                      className={cx("product-name")}
+                    >
                       {item.productName}
                     </NavLink>
                   </div>

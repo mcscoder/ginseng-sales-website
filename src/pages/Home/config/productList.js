@@ -1,6 +1,13 @@
+import routes from "config/routes";
+
+const productPath = "ruou-quoc-tuu-k5";
+const productLinkAddress = `${routes.productLink}/${productPath}`;
+
 export const promotionProduct = [
   {
-    imgPath: require("assets/images/product/tpbvsk-for-women.png"),
+    productPath: productPath,
+    productLinkAddress: productLinkAddress,
+    imgPaths: [require("assets/images/product/tpbvsk-for-women.png")],
     category: "THỰC PHẨM CHỨC NĂNG",
     productName: "TPBVSK LOVE GOOD FOR WOMEN’S HEALTH 20",
     quantitySold: 6996,
@@ -8,7 +15,9 @@ export const promotionProduct = [
     price: "900,000",
   },
   {
-    imgPath: require("assets/images/product/tpbvsk-for-men.png"),
+    productPath: productPath,
+    productLinkAddress: productLinkAddress,
+    imgPaths: [require("assets/images/product/tpbvsk-for-men.png")],
     category: "THỰC PHẨM CHỨC NĂNG",
     productName: "TPBVSK LOVE GOOD FOR MEN’S HEALTH 20 GOOD GOOD GOOD GOOD",
     quantitySold: 9669,
@@ -16,7 +25,9 @@ export const promotionProduct = [
     price: "900,000",
   },
   {
-    imgPath: require("assets/images/product/tpbvsk-for-women.png"),
+    productPath: productPath,
+    productLinkAddress: productLinkAddress,
+    imgPaths: [require("assets/images/product/tpbvsk-for-women.png")],
     category: "THỰC PHẨM CHỨC NĂNG",
     productName: "TPBVSK LOVE GOOD FOR WOMEN’S HEALTH",
     quantitySold: 6969,
@@ -24,7 +35,9 @@ export const promotionProduct = [
     price: "1,500,000",
   },
   {
-    imgPath: require("assets/images/product/tpbvsk-for-men.png"),
+    productPath: productPath,
+    productLinkAddress: productLinkAddress,
+    imgPaths: [require("assets/images/product/tpbvsk-for-men.png")],
     category: "THỰC PHẨM CHỨC NĂNG",
     productName: "TPBVSK LOVE GOOD FOR MEN’S HEALTH",
     quantitySold: 9696,
@@ -35,7 +48,9 @@ export const promotionProduct = [
 
 export const featuredProducts = [
   {
-    imgPath: require("assets/images/product/tpbs-collagen.jpg"),
+    productPath: productPath,
+    productLinkAddress: productLinkAddress,
+    imgPaths: [require("assets/images/product/tpbs-collagen.jpg")],
     category: "NƯỚC UỐNG COLLAGEN",
     productName: "TPBS Collagen – Sâm Ngọc Linh – Tổ Yến Noliko",
     quantitySold: 6969,
@@ -43,7 +58,9 @@ export const featuredProducts = [
     price: "510,000",
   },
   {
-    imgPath: require("assets/images/product/nuoc-tang-luc-k5.jpg"),
+    productPath: productPath,
+    productLinkAddress: productLinkAddress,
+    imgPaths: [require("assets/images/product/nuoc-tang-luc-k5.jpg")],
     category: "NƯỚC TĂNG LỰC",
     productName: "Thực Phẩm Bổ Sung Nước Tăng Lực Sâm Ngọc Linh K5",
     quantitySold: 6969,
@@ -51,7 +68,9 @@ export const featuredProducts = [
     price: "12,000",
   },
   {
-    imgPath: require("assets/images/product/ruou-quoc-tuu-k5.jpg"),
+    productPath: productPath,
+    productLinkAddress: productLinkAddress,
+    imgPaths: [require("assets/images/product/ruou-quoc-tuu-k5.jpg")],
     category: "RƯỢU QUỐC TỬU",
     productName: "Rượu Quốc Tửu K5",
     quantitySold: 6969,
@@ -59,7 +78,9 @@ export const featuredProducts = [
     price: "5,200,000",
   },
   {
-    imgPath: require("assets/images/product/to-yen-kids.jpg"),
+    productPath: productPath,
+    productLinkAddress: productLinkAddress,
+    imgPaths: [require("assets/images/product/to-yen-kids.jpg")],
     category: "SÂM YẾN",
     productName: "Tổ Yến Sâm Ngọc Linh K5 Kids",
     quantitySold: 6969,
@@ -67,7 +88,9 @@ export const featuredProducts = [
     price: "45,000",
   },
   {
-    imgPath: require("assets/images/product/to-yen.png"),
+    productPath: productPath,
+    productLinkAddress: productLinkAddress,
+    imgPaths: [require("assets/images/product/to-yen.png")],
     category: "SÂM YẾN",
     productName: "Tổ yến Sâm Ngọc Linh 100ml – 5 hủ/hộp",
     quantitySold: 6969,
@@ -75,7 +98,9 @@ export const featuredProducts = [
     price: "525,000",
   },
   {
-    imgPath: require("assets/images/product/vina-ginseng-tea.png"),
+    productPath: productPath,
+    productLinkAddress: productLinkAddress,
+    imgPaths: [require("assets/images/product/vina-ginseng-tea.png")],
     category: "TRÀ SÂM",
     productName: "TPBVSK K5 Vina Giseng Tea (hộp 20 gói)",
     quantitySold: 6969,
@@ -83,7 +108,9 @@ export const featuredProducts = [
     price: "650,000",
   },
   {
-    imgPath: require("assets/images/product/tpbvsk-for-women.png"),
+    productPath: productPath,
+    productLinkAddress: productLinkAddress,
+    imgPaths: [require("assets/images/product/tpbvsk-for-women.png")],
     category: "THỰC PHẨM CHỨC NĂNG",
     productName: "TPBVSK LOVE GOOD FOR WOMEN’S HEALTH",
     quantitySold: 6969,
@@ -91,7 +118,9 @@ export const featuredProducts = [
     price: "1,500,000",
   },
   {
-    imgPath: require("assets/images/product/tpbvsk-for-men.png"),
+    productPath: productPath,
+    productLinkAddress: productLinkAddress,
+    imgPaths: [require("assets/images/product/tpbvsk-for-men.png")],
     category: "THỰC PHẨM CHỨC NĂNG",
     productName: "TPBVSK LOVE GOOD FOR MEN’S HEALTH",
     quantitySold: 6969,
@@ -99,7 +128,9 @@ export const featuredProducts = [
     price: "1,500,000",
   },
   {
-    imgPath: require("assets/images/product/mat-ong-250ml.png"),
+    productPath: productPath,
+    productLinkAddress: productLinkAddress,
+    imgPaths: [require("assets/images/product/mat-ong-250ml.png")],
     category: "SÂM MẬT ONG",
     productName: "TPBS K5 Sâm Ngọc Linh Mật Ong 250ml",
     quantitySold: 6969,
@@ -107,7 +138,9 @@ export const featuredProducts = [
     price: "3,390,000",
   },
   {
-    imgPath: require("assets/images/product/ruou-sam-gold.png"),
+    productPath: productPath,
+    productLinkAddress: productLinkAddress,
+    imgPaths: [require("assets/images/product/ruou-sam-gold.png")],
     category: "RƯỢU SÂM",
     productName: "Rượu Sâm Ngọc Linh K5 (nhãn Vàng)",
     quantitySold: 6969,
@@ -115,7 +148,9 @@ export const featuredProducts = [
     price: "1,760,000",
   },
   {
-    imgPath: require("assets/images/product/ruou-sam-green.png"),
+    productPath: productPath,
+    productLinkAddress: productLinkAddress,
+    imgPaths: [require("assets/images/product/ruou-sam-green.png")],
     category: "RƯỢU SÂM",
     productName: "Rượu Sâm Ngọc Linh K5 (nhãn Xanh)",
     quantitySold: 6969,
@@ -123,7 +158,9 @@ export const featuredProducts = [
     price: "1,200,000",
   },
   {
-    imgPath: require("assets/images/product/dich-chiet-sam-50ml.png"),
+    productPath: productPath,
+    productLinkAddress: productLinkAddress,
+    imgPaths: [require("assets/images/product/dich-chiet-sam-50ml.png")],
     category: "DỊCH CHIẾT SÂM",
     productName: "TPBVSK Dịch chiết Sâm Ngọc Linh K5 – 50ml – 10 chai/hộp",
     quantitySold: 6969,

@@ -10,7 +10,6 @@ const cx = classNames.bind(style);
 const id = layouts.nav_sidebar;
 
 function NavSidebar({ layout, closeNavSidebar = () => {} }) {
-  console.log("Nav-Sidebar re-render");
   const [activeMenu, setActiveMenu] = useState(0);
   // 0: product hover active; - 1: information hover active;
   const [currentMenu, setCurrentMenu] = useState(0);
