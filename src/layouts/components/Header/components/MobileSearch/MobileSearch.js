@@ -6,6 +6,7 @@ const cx = classNames.bind(style);
 const id = layouts.mobile_search
 
 function MobileSearch({ layout }) {
+  console.log("Mobile-Search re-render");
   return (
     <div
       className={cx("mobile-search")}

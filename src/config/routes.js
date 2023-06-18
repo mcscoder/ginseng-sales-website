@@ -1,17 +1,16 @@
 import category from "assets/productData/productCategory";
 
-const dynamicRouteLink = (dict) => {
+const categoryLink = () => {
   const link = {};
-  for (const key in dict) {
-    link[key] = `/category/${dict[key]}`;
+  for (const key in category) {
+    link[key] = `/category/${category[key]}`;
   }
   return link;
 };
 
 const routes = {
   home: "/",
-  categoryLink: dynamicRouteLink(category),
-  productLink: "/product"
+  categoryLink: categoryLink(),
 };
 
 export default routes;

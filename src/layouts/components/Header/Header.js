@@ -13,6 +13,7 @@ import {
 const cx = classNames.bind(style);
 
 function Header() {
+  console.log("Header re-render");
   const [displayedLayout, setDisplayedLayout] = useState(0);
   // true: remove fade-out animation; - false: add fade-out animation;
   const [displayPopupBg, setDisplayPopupBg] = useState(false);

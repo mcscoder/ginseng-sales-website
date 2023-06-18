@@ -13,10 +13,10 @@
   }
 
   .swiper-button-prev {
-    left: 10px;
+    left: 0px;
   }
   .swiper-button-next {
-    right: 10px;
+    right: 0px;
   }
 
   .swiper-button-disabled {
@@ -29,7 +29,7 @@
     width: 36px;
     height: 36px;
     opacity: 0.06;
-    
+
     &:hover {
       border-color: red;
       background-color: red;

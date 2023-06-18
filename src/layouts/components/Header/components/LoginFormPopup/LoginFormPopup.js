@@ -8,6 +8,8 @@ const cx = classNames.bind(style);
 const id = layouts.popup_login;
 
 function LoginFormPopup({ layout }) {
+  console.log("Login-Form-Popup re-render");
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
