@@ -1,47 +1,12 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
 import classNames from "classnames/bind";
 import style from "./ProductGrid.module.scss";
+import AddToCartButton from "./components/AddToCartButton/AddToCartButton";
+import StarRating from "./components/StarRating/StarRating";
 
 const cx = classNames.bind(style);
 
-function CartButton() {
-  const [isHovered, setIsHovered] = useState(false);
-
-  return (
-    <button
-      className={cx("add-to-cart")}
-      onMouseOver={() => setIsHovered(true)}
-      onMouseOut={() => setIsHovered(false)}
-    >
-      <i
-        className={
-          isHovered
-            ? "fa-solid fa-cart-plus fa-bounce"
-            : "fa-solid fa-cart-plus"
-        }
-      ></i>
-    </button>
-  );
-}
-
 function ProductGrid({ productList = [] }) {
-  function StarRating({ rating }) {
-    const stars = [];
-
-    let i = 0;
-    for (i; i < rating; i++) {
-      stars.push(<i key={i} className="fa-solid fa-star"></i>);
-    }
-    for (i; i < 5; i++) {
-      stars.push(<i key={i} className="fa-regular fa-star"></i>);
-    }
-
-    return <>{stars}</>;
-  }
-
-  console.log();
-
   return (
     <div className={cx("product-section")}>
       {productList.map((item, index) => {
@@ -74,10 +39,12 @@ function ProductGrid({ productList = [] }) {
                     <div className={cx("product-rating")}>
                       <StarRating rating={item.rating} />
                     </div>
-                    <span className={cx("product-price")}>{item.price} ₫</span>
+                    <span className={cx("product-price")}>
+                      {item.price.toLocaleString("en-US")} ₫
+                    </span>
                   </div>
                   <div className={cx("right")}>
-                    <CartButton />
+                    <AddToCartButton productPath={item.productPath} />
                   </div>
                 </div>
               </div>

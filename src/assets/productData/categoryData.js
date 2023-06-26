@@ -93,7 +93,7 @@ const categoryData = {
   //       "Rượu Quốc Tửu K5", // product name
   //       459, // quantity sold
   //       5, // rating from 0 to 5
-  //       "5,200,000", // price
+  //       "5,200,000,// ric
   //       "Rượu Quốc Tửu K5 là loại rượu được phối chế từ rượu whisky K5( một loại rượu đặc sắc được ủ trên 10 năm tuổi với công thức độc đáo bí truyền của riêng K5) cùng với củ Sâm Ngọc Linh trên 12 năm tuổi (10g/l). Qua nhiều công đoạn tinh chế cầu kỳ và độc nhất đã cho ra dòng rượu QUỐC TỬU K5 đặc biệt khó lẫn với bất kỳ loại rượu nào và đảm bảo khi thưởng thức sẽ nhớ mãi không quên.;Sản phẩm rất thích hợp dùng để làm quà tặng bạn bè, gia đình, đối tác hoặc để trưng bày,…nhằm thể hiện sự tinh tế, sự quan tâm chu đáo của người tặng đối với người nhận.",
   //       details(
   //         "Rượu Whisky K5, Sâm Ngọc Linh 12 năm tuổi (10g/l)", // ingredients
@@ -118,7 +118,7 @@ const categoryData = {
         "Rượu Sâm Ngọc Linh K5 Premium",
         245,
         5,
-        "1,860,000"
+        1860000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -127,7 +127,7 @@ const categoryData = {
         "Rượu Sâm Ngọc Linh K5 (nhãn Vàng)",
         2958,
         5,
-        "1,760,000"
+        1760000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -136,7 +136,7 @@ const categoryData = {
         "Rượu Sâm Ngọc Linh K5 (nhãn Xanh)",
         1326,
         5,
-        "1,200,000"
+        1200000
       ),
     ],
   },
@@ -153,7 +153,7 @@ const categoryData = {
         "TPBVSK Dịch chiết Sâm Ngọc Linh K5 – 50ml",
         4845,
         5,
-        "135,000"
+        135000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -162,7 +162,7 @@ const categoryData = {
         "TPBVSK Dịch chiết Sâm Ngọc Linh K5 – 50ml – 10 chai/hộp",
         5202,
         5,
-        "1,320,000"
+        1320000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -171,7 +171,7 @@ const categoryData = {
         "TPBVSK Dịch chiết Sâm Ngọc Linh K5 – 50ml – 05 chai/hộp",
         1326,
         5,
-        "660,000"
+        660000
       ),
     ],
   },
@@ -188,7 +188,7 @@ const categoryData = {
         "TPBS K5 Sâm Ngọc Linh Mật Ong 250ml",
         3213,
         5,
-        "3,390,000"
+        3390000
       ),
     ],
   },
@@ -205,7 +205,7 @@ const categoryData = {
         "TPBVSK K5 Vina Giseng Tea (hộp 20 gói)",
         3366,
         5,
-        "650,000"
+        650000
       ),
     ],
   },
@@ -222,7 +222,7 @@ const categoryData = {
         "Tổ Yến Sâm Ngọc Linh K5 Kids",
         969,
         5,
-        "45,000"
+        45000
       ),
     ],
     productList: [
@@ -233,7 +233,7 @@ const categoryData = {
         "Tổ yến Sâm Ngọc Linh 100ml",
         510,
         5,
-        "105,000"
+        105000
       ),
     ],
     productList: [
@@ -244,7 +244,7 @@ const categoryData = {
         "Tổ yến Sâm Ngọc Linh 100ml – 5 hủ/hộp",
         7905,
         4,
-        "525,000"
+        525000
       ),
     ],
   },
@@ -261,7 +261,7 @@ const categoryData = {
         "Hộp Quà Lộc Xuân",
         357,
         5,
-        "1,850,000"
+        1850000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -270,7 +270,7 @@ const categoryData = {
         "Hộp Quà Hưng Thịnh",
         153,
         5,
-        "2,100,000"
+        2100000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -279,7 +279,7 @@ const categoryData = {
         "Hộp Quà An Khang",
         102,
         5,
-        "2,150,000"
+        2150000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -288,7 +288,7 @@ const categoryData = {
         "Hộp Quà Đại Phú",
         459,
         5,
-        "2,450,000"
+        2450000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -297,7 +297,7 @@ const categoryData = {
         "Hộp Quà Thịnh Phát",
         459,
         5,
-        "2,650,000"
+        2650000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -306,7 +306,7 @@ const categoryData = {
         "Hộp Quà Thịnh Vượng",
         459,
         5,
-        "2,700,000"
+        2700000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -315,7 +315,7 @@ const categoryData = {
         "Hộp Quà Tấn Tài",
         459,
         5,
-        "2,700,000"
+        2700000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -324,7 +324,7 @@ const categoryData = {
         "Hộp Quà Đại Quý",
         153,
         5,
-        "3,000,000"
+        3000000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -333,7 +333,7 @@ const categoryData = {
         "Hộp Quà Tấn Lộc",
         51,
         5,
-        "3,250,000"
+        3250000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -342,7 +342,7 @@ const categoryData = {
         "Combo Phú Quý",
         51,
         5,
-        "4,390,000"
+        4390000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -351,7 +351,7 @@ const categoryData = {
         "Combo Lộc Phát",
         51,
         5,
-        "750,000"
+        750000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -360,7 +360,7 @@ const categoryData = {
         "Combo Sắc Xuân",
         204,
         5,
-        "750,000"
+        750000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -369,7 +369,7 @@ const categoryData = {
         "Combo Cát Tường",
         204,
         5,
-        "1,310,000"
+        1310000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -378,7 +378,7 @@ const categoryData = {
         "Combo Đại Cát",
         459,
         5,
-        "3,070,000"
+        3070000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -387,7 +387,7 @@ const categoryData = {
         "Combo Tấn Lộc",
         459,
         5,
-        "2,510,000"
+        2510000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -396,7 +396,7 @@ const categoryData = {
         "Combo Tấn Tài",
         51,
         5,
-        "2,410,000"
+        2410000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -405,7 +405,7 @@ const categoryData = {
         "Combo Đại Lộc",
         357,
         5,
-        "1,850,000"
+        1850000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -414,7 +414,7 @@ const categoryData = {
         "Combo Thịnh Vượng",
         57,
         5,
-        "2,420,000"
+        2420000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -423,7 +423,7 @@ const categoryData = {
         "Combo An Khang",
         57,
         5,
-        "1,860,000"
+        1860000
       ),
     ],
   },
@@ -440,7 +440,7 @@ const categoryData = {
         "TPBVSK LOVE GOOD FOR WOMEN’S HEALTH 20",
         6996,
         1,
-        "900,000"
+        900000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -449,7 +449,7 @@ const categoryData = {
         "TPBVSK LOVE GOOD FOR MEN’S HEALTH 20 GOOD GOOD GOOD GOOD",
         9669,
         2,
-        "900,000"
+        900000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -458,7 +458,7 @@ const categoryData = {
         "TPBVSK LOVE GOOD FOR WOMEN’S HEALTH",
         6969,
         3,
-        "1,500,000"
+        1500000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -467,7 +467,7 @@ const categoryData = {
         "TPBVSK LOVE GOOD FOR MEN’S HEALTH",
         9696,
         4,
-        "1,500,000"
+        1500000
       ),
     ],
   },
@@ -486,7 +486,7 @@ const categoryData = {
         "Thực Phẩm Bổ Sung Nước Tăng Lực Sâm Ngọc Linh K5",
         1530,
         5,
-        "12,000"
+        12000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -495,7 +495,7 @@ const categoryData = {
         "[Thùng/24Lon]Nước tăng lực Night Wolf vị nguyên bản 320ml",
         153,
         5,
-        "472,000"
+        472000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -504,7 +504,7 @@ const categoryData = {
         "[Pack/6Lon]Nước tăng lực Night Wolf vị nguyên bản 320ml",
         51,
         5,
-        "120,000"
+        120000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -513,7 +513,7 @@ const categoryData = {
         "Thực Phẩm Bổ Sung Nước Tăng Lực Night Wolf 320ml",
         663,
         5,
-        "20,000"
+        20000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -522,7 +522,7 @@ const categoryData = {
         "Thực phẩm bổ sung Nước tăng lực Night Wolf 245ml",
         459,
         5,
-        "16,000"
+        16000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -531,7 +531,7 @@ const categoryData = {
         "Thực phẩm bổ sung Nước tăng lực Night Wolf vị cà phê 245ml",
         459,
         5,
-        "16,000"
+        16000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -540,7 +540,7 @@ const categoryData = {
         "[Thùng/24Lon]Nước tăng lực Night Wolf vị nguyên bản 245ml",
         459,
         5,
-        "384,000"
+        384000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -549,7 +549,7 @@ const categoryData = {
         "[Thùng/24Lon]Nước tăng lực Night Wolf vị cà phê 245ml",
         459,
         5,
-        "384,000"
+        384000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -558,7 +558,7 @@ const categoryData = {
         "[Pack/6Lon]Nước tăng lực Night Wolf vị cà phê 245ml",
         459,
         5,
-        "96,000"
+        96000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -567,7 +567,7 @@ const categoryData = {
         "[Pack/6Lon]Nước tăng lực Night Wolf vị nguyên bản 245ml",
         459,
         5,
-        "96,000"
+        96000
       ),
     ],
   },
@@ -584,7 +584,7 @@ const categoryData = {
         "TPBS Collagen – Sâm Ngọc Linh – Tổ Yến Noliko",
         663,
         5,
-        "90,000"
+        90000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -593,7 +593,7 @@ const categoryData = {
         "Thực phẩm bổ sung Nước uống dưỡng da Sâm Ngọc Linh Collagen NOLIKO 240ml_lon",
         3366,
         5,
-        "20,000"
+        20000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -602,7 +602,7 @@ const categoryData = {
         "[Thùng/24Lon]Nước dưỡng da NOLIKO 240ml",
         1224,
         5,
-        "480,000"
+        480000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -611,7 +611,7 @@ const categoryData = {
         "[Pack/6Lon]Nước uống dưỡng da Sâm Ngọc Linh Collagen NOLIKO 240ml",
         357,
         5,
-        "120,000"
+        120000
       ),
     ],
   },
@@ -628,7 +628,7 @@ const categoryData = {
         "Sữa chua dê nguyên bản sấy thăng hoa",
         459,
         5,
-        "76,000"
+        76000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -637,16 +637,16 @@ const categoryData = {
         "Sữa chua dê việt quất sấy thăng hoa",
         459,
         5,
-        "76,000"
+        76000
       ),
       productInformation(
-        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadaaaaaaaaa",
+        "ruou-quoc-tuu-k5",
         [require("assets/images/product/de-say-sau-rieng-600x600.jpg")],
         categoryName.suaDe,
         "Sữa chua dê sầu riêng sấy thăng hoa",
         459,
         5,
-        "76,000"
+        76000
       ),
       productInformation(
         "ruou-quoc-tuu-k5",
@@ -655,7 +655,7 @@ const categoryData = {
         "Sữa chua dê cherry sấy thăng hoa",
         459,
         5,
-        "76,000"
+        76000
       ),
     ],
   },
@@ -668,7 +668,8 @@ const categoryData = {
       productInformation(
         "ruou-quoc-tuu-k5", // product link
         [
-          require("assets/images/product/ruou-quoc-tuu-k5.jpg"),
+          // product images
+          require("assets/images/product/ruou-quoc-tuu-k5.jpg"), // appear in product grid
           require("assets/images/product/quoc-tuu-900x900-07-600x600.jpg"),
           require("assets/images/product/quoc-tuu-900x900-08-600x600.jpg"),
           require("assets/images/product/quoc-tuu-900x900-09-600x600.jpg"),
@@ -683,7 +684,7 @@ const categoryData = {
         "Rượu Quốc Tửu K5", // product name
         459, // quantity sold
         5, // rating from 0 to 5
-        "5,200,000", // price
+        5200000, // price
         "Rượu Quốc Tửu K5 là loại rượu được phối chế từ rượu whisky K5( một loại rượu đặc sắc được ủ trên 10 năm tuổi với công thức độc đáo bí truyền của riêng K5) cùng với củ Sâm Ngọc Linh trên 12 năm tuổi (10g/l). Qua nhiều công đoạn tinh chế cầu kỳ và độc nhất đã cho ra dòng rượu QUỐC TỬU K5 đặc biệt khó lẫn với bất kỳ loại rượu nào và đảm bảo khi thưởng thức sẽ nhớ mãi không quên.;Sản phẩm rất thích hợp dùng để làm quà tặng bạn bè, gia đình, đối tác hoặc để trưng bày,…nhằm thể hiện sự tinh tế, sự quan tâm chu đáo của người tặng đối với người nhận.",
         details(
           "Rượu Whisky K5, Sâm Ngọc Linh 12 năm tuổi (10g/l)", // ingredients

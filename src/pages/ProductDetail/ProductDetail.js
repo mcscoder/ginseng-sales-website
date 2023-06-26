@@ -23,6 +23,7 @@ function ProductDetail() {
   return (
     <div className={cx("container")}>
       <ProductOverView
+        productPath={displayProduct.productPath}
         imgPaths={displayProduct.imgPaths}
         productName={displayProduct.productName}
         productPrice={displayProduct.price}

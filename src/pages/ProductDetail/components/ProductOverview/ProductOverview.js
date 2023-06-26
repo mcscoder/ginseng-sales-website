@@ -7,6 +7,7 @@ import AddToCartButton from "./components/AddToCartButton/AddToCartButton";
 const cx = classNames.bind(style);
 
 function ProductOverView({
+  productPath,
   imgPaths = [],
   productName,
   productPrice,
@@ -36,7 +37,7 @@ function ProductOverView({
           <div className={cx("separator")}></div>
 
           <div className={cx("price")}>
-            <span>{productPrice} ₫</span>
+            <span>{productPrice.toLocaleString("en-US")} ₫</span>
           </div>
 
           <div className={cx("sold-quantity")}>
@@ -64,7 +65,7 @@ function ProductOverView({
                 <CountButton />
               </div>
               <div className={cx("add-to-cart")}>
-                <AddToCartButton />
+                <AddToCartButton productPath={productPath} />
               </div>
             </div>
           </div>

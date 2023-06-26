@@ -11,9 +11,7 @@ function ProductContainer({ headerTitle, product }) {
         <span className={cx("title-text")}>{headerTitle}</span>
       </div>
 
-      <ProductGrid
-        productList={product}
-      />
+      <ProductGrid productList={product} />
     </div>
   );
 }

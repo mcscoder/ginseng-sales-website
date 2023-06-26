@@ -1,5 +1,5 @@
 :root {
-  --sidebar-width: 400px;
+  --cart-sidebar-width: 400px;
 }
 
 .sidebar-container {
@@ -7,7 +7,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  width: var(--sidebar-width);
+  width: var(--cart-sidebar-width);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.7);
   z-index: 99;
   display: none;
@@ -71,7 +71,7 @@
         right: 0;
       }
       100% {
-        right: calc(-20px - var(--sidebar-width));
+        right: calc(-20px - var(--cart-sidebar-width));
       }
     }
 
@@ -85,7 +85,7 @@
   @mixin slideRightToLeft($time: 0.5s) {
     @keyframes slide-right-to-left-animation {
       0% {
-        right: calc(-20px - var(--sidebar-width));
+        right: calc(-20px - var(--cart-sidebar-width));
       }
       100% {
         right: 0;
@@ -98,14 +98,8 @@
   @include slideRightToLeft(0.3s);
 }
 
-@media screen and (max-width: 1024px) {
-  :root {
-    --sidebar-width: 300px;
-  }
-}
-
 @media screen and (max-width: 480px) {
   :root {
-    --sidebar-width: 100%;
+    --cart-sidebar-width: 100%;
   }
 }
