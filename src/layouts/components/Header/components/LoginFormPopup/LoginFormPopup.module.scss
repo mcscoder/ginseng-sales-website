@@ -181,6 +181,14 @@
           font-size: 15px;
         }
       }
+
+      .validate-message {
+        text-transform: uppercase;
+        color: red;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
     }
   }
 }

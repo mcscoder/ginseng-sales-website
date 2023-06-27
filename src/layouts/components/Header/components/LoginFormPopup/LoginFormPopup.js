@@ -4,10 +4,29 @@ import classNames from "classnames/bind";
 import style from "./LoginFormPopup.module.scss";
 import { layouts } from "../../config";
 
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+
+const schema = yup
+  .object({
+    email: yup.string().email("vui lòng nhập đúng định dạng email"),
+  })
+  .required();
+
 const cx = classNames.bind(style);
 const id = layouts.popup_login;
 
 function LoginFormPopup({ layout }) {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
+  const onSubmit = (data) => console.log(data);
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -65,43 +84,19 @@ function LoginFormPopup({ layout }) {
           </div>
         </form>
 
-        <form className={cx("form-container")}>
-          <span className={cx("form-title")}>đăng ký</span>
-          <div className={cx("input-container")}>
-            <input
-              type="text"
-              onChange={(e) => setRegUsername(e.target.value)}
-              required
-            />
-            <label className={cx("top-label")}>tên đăng nhập hoặc email</label>
-            <label className={cx("place-holder")}>
-              tên đăng nhập hoặc email
-            </label>
-          </div>
-          <div className={cx("input-container")}>
-            <input
-              type="password"
-              onChange={(e) => setRegPassword(e.target.value)}
-              required
-            />
-            <label className={cx("top-label")}>mật khẩu</label>
-            <label className={cx("place-holder")}>mật khẩu</label>
-          </div>
-
-          <div className={cx("submit-btn")}>
-            <button type="submit">đăng ký</button>
-          </div>
-        </form>
-
         <div className={cx("separator")}></div>
 
-        {/* <form className={cx("form-container")}>
+        <form
+          className={cx("form-container")}
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <span className={cx("form-title")}>đăng ký</span>
           <div className={cx("input-container")}>
-            <input type="text" required />
+            <input type="text" required {...register("email")} />
             <label className={cx("top-label")}>email</label>
             <label className={cx("place-holder")}>email</label>
           </div>
+          <p className={cx("validate-message")}>{errors.email?.message}</p>
 
           <div className={cx("description")}>
             <span className={cx("eng")}>
