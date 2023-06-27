@@ -12,3 +12,10 @@
     background-color: rgb(124, 25, 46);
   }
 }
+
+@media screen and (max-width: 480px) {
+  .add-to-cart {
+    padding: 10px;
+    font-size: 20px;
+  }
+}
