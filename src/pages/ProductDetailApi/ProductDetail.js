@@ -1,40 +1,47 @@
 import { useParams } from "react-router-dom";
-import { useMemo } from "react";
-import productDetailData from "assets/productData/productDetailData";
+import { useEffect, useMemo, useState } from "react";
 import classNames from "classnames/bind";
 import style from "./ProductDetail.module.scss";
 import ProductOverView from "./components/ProductOverview/ProductOverview";
 import ProductDescription from "./components/ProductDescription/ProductDescription";
 import SimilarProduct from "./components/SimilarProduct/SimilarProduct";
 
+import productDetailData from "assets/productData/productDetailDataApi";
+
 const cx = classNames.bind(style);
 
 function ProductDetail() {
   const { productId } = useParams();
+  const [displayProduct, setDisplayProduct] = useState(null);
 
-  const product = useMemo(() => {
-    return productDetailData();
-  }, []);
+  useEffect(() => {
+    const fetchData = async () => {
+      const productData = await productDetailData();
+      setDisplayProduct(productData[productId]);
+    };
 
-  const displayProduct = useMemo(() => {
-    return product[productId];
-    // eslint-disable-next-line
+    fetchData();
   }, [productId]);
+
+  
+  if (displayProduct === null) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className={cx("container")}>
       <ProductOverView
-        productPath={displayProduct.productPath}
-        imgPaths={displayProduct.imgPaths}
-        productName={displayProduct.productName}
+        images={displayProduct.images}
+        productName={displayProduct.name}
         productPrice={displayProduct.price}
         quantitySold={displayProduct.quantitySold}
-        descriptions={displayProduct.descriptions}
+        descriptions={displayProduct.description}
       />
       <ProductDescription details={displayProduct.details} />
       <SimilarProduct />
     </div>
   );
 }
+
 
 export default ProductDetail;

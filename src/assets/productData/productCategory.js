@@ -5,7 +5,7 @@ const category = {
   samMatOng: "sam-mat-ong",
   traSam: "tra-sam",
   samYen: "sam-yen",
-  giftCombo: "gift-combo",
+  giftCombo: "combo-qua-tang",
   tpcn: "thuc-pham-chuc-nang",
   nuocTangLuc: "nuoc-tang-luc",
   collagenDrink: "nuoc-uong-collagen",

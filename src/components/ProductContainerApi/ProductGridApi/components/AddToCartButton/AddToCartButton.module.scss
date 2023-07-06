@@ -1,0 +1,21 @@
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(192, 31, 65);
+  padding: 12px;
+  color: #fff;
+  font-size: 30px;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: rgb(124, 25, 46);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .add-to-cart {
+    padding: 10px;
+    font-size: 20px;
+  }
+}

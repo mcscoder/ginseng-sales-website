@@ -578,7 +578,7 @@ const categoryData = {
     title: categoryName.collagenDrink,
     productList: [
       productInformation(
-        "ruou-quoc-tuu-k5",
+        "to-yen-noliko",
         [require("assets/images/product/hoop-10-1-600x600.jpg")],
         categoryName.collagenDrink,
         "TPBS Collagen – Sâm Ngọc Linh – Tổ Yến Noliko",
