@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import classNames from "classnames/bind";
 import style from "./Header.module.scss";
 import { layouts, headerToggleLinkItems, headerLinkItems } from "./config";
@@ -17,6 +17,12 @@ function Header() {
   // true: remove fade-out animation; - false: add fade-out animation;
   const [displayPopupBg, setDisplayPopupBg] = useState(false);
   // true: display: block; - false: display: none;
+
+  const [username, setUsername] = useState("");
+
+  useEffect(() => {
+    setUsername(localStorage.getItem("username"));
+  }, []);
 
   function handleDisplayedLayout(id) {
     setDisplayedLayout(id);
@@ -126,7 +132,7 @@ function Header() {
               className={cx("login-btn")}
               onClick={() => handleDisplayedLayout(layouts.popup_login)}
             >
-              đăng nhập
+              {username ?? "đăng nhập"}
             </button>
 
             <div className={cx("separator")}></div>
